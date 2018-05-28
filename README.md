@@ -39,6 +39,7 @@ n_body.py:  Simulates (by default) a system with 200 randomly distributed partic
 
 Examples of simulations can be seen in the scripts included in this repo.
 
+
 To create a script, create a universe object.  When doing this you must define the dimensions of the universe in pixels:
 
 ```new_universe = universe(x_dimension, y_dimension)```
@@ -56,15 +57,18 @@ Each pixel nominally represents a distance of 10^9 m (1 million km).
 
 Once a universe is created you need to add particles.  This can be done in two ways, randomly or manually.
 
+
 To add particles randomly use the command: 
 
 ```new_universe.fillUniverse(n)```
 
 where n is the number of particles to add.  This command adds n particles, each of which will have a random velocity, mass and position.  new_universe should be replaced by the name of your universe.
 
+
 To add particles mannually use the command:
 
 ```new_universe.addParticle(particle(vector(x_position, y_position),mass,vector(x_velocity, y_velocity)))```
+
 
 For example
 
@@ -72,11 +76,13 @@ For example
 
 creates a particle with position (150,150), mass 6e3 and velocity (-0.005,0)
 
+
 To run a simulation use the command:
 
 ```new_universe.run_simulation(time)```
 
 where time is the total time to simulate.
+
 
 You may also use:
 
