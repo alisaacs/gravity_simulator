@@ -17,10 +17,10 @@ The time step used in the simulation adjusts depending on the velocity of the pa
 
 Note that the simulation does not use SI units.  When entering mass, position, velocity or time, each simulation unit is equal to:
 
-*Mass:     10^24 kg
-*Time:     10^7  s
-*Distance: 10^9  m
-*Speed:    10^2  m/s
+* Mass:     10^24 kg
+* Time:     10^7  s
+* Distance: 10^9  m
+* Speed:    10^2  m/s
 
 For example, to enter a mass of 10^30 kg, you would enter a value of 10^6 into the simulation.
 
@@ -67,15 +67,20 @@ To add particles mannually use the command:
 ```new_universe.addParticle(particle(vector(x_position, y_position),mass,vector(x_velocity, y_velocity)))```
 
 For example
+
 ```two_body.addParticle(particle(vector(150,150),6e3,vector(-0.005,0)))```
+
 creates a particle with position (150,150), mass 6e3 and velocity (-0.005,0)
 
 To run a simulation use the command:
+
 ```new_universe.run_simulation(time)```
 
 where time is the total time to simulate.
 
 You may also use:
+
 ```new_universe.run_simulation(time, tracks="True")```
+
 This command will show the tracks of each particle in the display and can be useful for seeing orbits clearly.
 
